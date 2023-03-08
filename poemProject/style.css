@@ -1,0 +1,43 @@
+body {
+ background:#460000;
+ color:#ff0000;
+ margin:0 0 0 18pt;
+ font-family: 'Inria Sans', sans-serif;
+ font-size:16pt;
+}
+a {
+ color:#ff0000;;
+ text-decoration:none;
+}
+p {
+ color:#ff0000;
+}
+#main {
+ padding-top:18px;
+ width:70%;
+}
+#main div {
+ font-weight:normal;
+ padding-bottom:9px;
+ text-align: center;
+}
+#info {
+ top:0;
+ right:0;
+ bottom:100px;
+ position:absolute;
+ height:100%;
+ width:25%;
+ color:#b63232;
+ background:#390000;
+ margin-left:6px;
+ padding:30px;
+ font-size:80%
+}
+
+#info img{
+    width: auto;
+    height: 55%;
+    border-radius: 7%;
+}
+
