@@ -248,3 +248,34 @@ li a {
     bottom: 35%;
     left: 20%;
   }
+
+.box5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    position: relative;
+    /* background-color: lightpink;
+    border: 5px solid blue; */
+    padding: 3%;
+    position: relative;
+    left: 30%;
+    bottom: 20%;
+    text-align: center;
+  }
+
+  .box6 {
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    position: relative;
+    font-size: 120%;
+    /* background-color: lightpink;
+    border: 5px solid blue; */
+    padding: 2%;
+    line-height: 200%;
+    position: relative;
+    bottom: 35%;
+    left: 20%;
+  }
