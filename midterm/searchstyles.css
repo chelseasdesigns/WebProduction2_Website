@@ -1,0 +1,323 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(-180deg, #000000, #6e2026);
+}
+
+h1 {
+    color: white;
+    margin: 5%;
+}
+
+p {
+    color: white;
+    margin: 5%;
+}
+
+/* Search Bar and Button Styles */
+.headerlayout {
+    display: grid;
+    grid-template-columns: repeat(9, 10%);
+    grid-auto-rows: 10px;
+}
+
+.searchbar {
+    position: relative;
+    bottom: 600%;
+    left: 45%;
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#input {
+    border-style: solid;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+
+#submit {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background: none;
+    display: inline-block;
+    transform-origin: center;
+    padding: 2%;
+    font-size: 15px;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #FF4655;
+    border-color: #6e2026;
+    transform: scale(1.1);
+}
+
+/* Navbar Styles */
+.navbar-container {
+    display: flex;
+    justify-content: left;
+    height: 50px;
+    margin: 3%;
+}
+
+.navbar {
+    list-style: none;
+    margin: 2%;
+    padding: 1%;
+    float: right;
+  }
+
+.navbar li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 100%;
+}
+
+.navbar a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+    color: #FF4655;
+}
+  
+.navbar a:not(:hover)::before {
+    left: 100%;
+    width: 0%;
+}
+
+.navlogo img{
+    float: left;
+    height: 100px;
+}
+
+/* Agent Results Styles */
+
+.ValoAgent_card {
+    display: grid;
+    grid-template-columns: repeat(9, 10%);
+    grid-auto-rows: 50px;
+    margin: 5%;
+    color: white;
+}
+
+#agentName {
+    text-shadow: 2px 4px 0px #FF4655;
+    color: white;
+    font-weight: bolder;
+    margin: 5%;
+    font-size: 250%;
+    position: relative;
+    right: 75%;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#agentRole {
+    color: white;
+    font-style: italic;
+    margin: 5%;
+    font-size: 150%;
+    position: relative;
+    right: 75%;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#agentImg {
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    right: 100%;
+    height: 600px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#agentDescription {
+    color: white;
+    margin: 5%;
+    line-height: 30px;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#agentAbility1 {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 5%;
+    position: relative;
+    left: 10%;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+#agentAbility1IMG {
+    display: block;
+    margin: auto;
+    height: 200%;
+    position: relative;
+    left: 10%;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#agentAbility1Desc {
+    color: white;
+    font-size: 10px;
+    margin: 5%;
+    position: relative;
+    left: 10%;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+
+#agentAbility2 {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 5%;
+    position: relative;
+    left: 10%;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+#agentAbility2IMG {
+    display: block;
+    margin: auto;
+    height: 200%;
+    position: relative;
+    left: 10%;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#agentAbility2Desc {
+    color: white;
+    font-size: 10px;
+    margin: 5%;
+    position: relative;
+    left: 10%;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+
+#agentAbility3 {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 5%;
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+#agentAbility3IMG {
+    display: block;
+    margin: auto;
+    height: 200%;
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+#agentAbility3Desc {
+    color: white;
+    font-size: 10px;
+    margin: 5%;
+    position: relative;
+    left: 10%;
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 9;
+    grid-row-end: 10;
+}
+
+#agentUltimate {
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+    margin: 5%;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+
+#agentUltimateDesc {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 5%;
+    position: relative;
+    right: 1%;
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 13;
+    grid-row-end: 16;
+}
+
+#agentUltimateIMG {
+    display: block;
+    width: auto;
+    height: 85%;
+    position: relative;
+    left: 20%;
+    bottom: 15%;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 13;
+    grid-row-end: 16;
+}

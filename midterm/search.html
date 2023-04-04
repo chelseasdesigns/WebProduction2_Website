@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="searchstyles.css">
+
+    <title>VALORANT Agents</title>
+    <link rel="valorant-website-icon" type="image/png" href="img/valorant.png">
+</head>
+
+<body>
+    <div class="navbar-container">
+        <li class="navlogo"><a href="index.html"><img src="img\valorantnamelogo.png"></a></li>
+        <ul class="navbar">
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="search.html" class="active">Search</a></li>
+        </ul>
+      </div>
+
+    <div class="headerlayout">
+        <div class="searchbar">
+            <form action="index.html" method="get" onsubmit="search(event)">
+                <input id="input" type="text" name="valorantagents" placeholder="Enter An Agent's Name...">
+                <button id="submit">GO</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="ValoAgent_card">
+        <div id="agentName"agentName></div>
+        <div id="agentRole"agentRole></div>
+        <img id="agentImg" agentImg src=""/>
+        <audio id="agentVoiceLine"agentVoiceLine> <!-- Insert audio tag --></audio>
+        <div id="agentDescription"agentDescription></div>
+        <div id="agentAbility1"agentAbility1></div>
+        <div id="agentAbility1Desc"agentAbility1Desc></div>
+        <img id="agentAbility1IMG"agentAbility1IMG>
+        <div id="agentAbility2"agentAbility2></div>
+        <div id="agentAbility2Desc"agentAbility2Desc></div>
+        <img id="agentAbility2IMG"agentAbility2IMG>
+        <div id="agentAbility3"agentAbility3></div>
+        <div id="agentAbility3Desc"agentAbility3Desc></div>
+        <img id="agentAbility3IMG"agentAbility3IMG>
+        <div id="agentUltimate"agentUltimate></div>
+        <div id="agentUltimateDesc"agentUltimateDesc></div>
+        <img id="agentUltimateIMG"agentUltimateIMG>
+    </div>
+
+    <script src="API.js"></script>
+</body>
+</html>
