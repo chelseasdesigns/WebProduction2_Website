@@ -1,0 +1,125 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    background: url('mp4\valointro.mp4') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.LandingPageLayout {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px;
+    position: relative;
+    margin: 3%;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+  
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 30%;
+}
+
+.logo-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.logo-container img{
+    margin: 0 auto;
+    width: auto;
+    height: 300px;
+}
+
+h1 {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    color: #ff4453;
+    font-size: 400%;
+}
+
+
+
+.button-container {
+    position: absolute;
+    top: 70%;
+    left: 43%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background: none;
+    display: inline-block;
+    transform-origin: center;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF4655;
+    border-color: #6e2026;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* .button-style {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: transparent;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    padding: 15px 25px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .button-style::before {
+    content: "";
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    width: 200%;
+    height: 200%;
+    background-color: #FF4655;
+    /* transform: rotate(-45deg);
+    transition: transform 0.5s ease-out;
+  }
+  
+  .button-style:hover::before {
+    transform: translate(100%, 100%) rotate(-45deg);
+  } */
